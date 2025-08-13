@@ -16,12 +16,11 @@
 </form>
 
 <?php
-if (isset($_POST['submit'])) {
-    // Convert user input into arrays
+if (isset($_POST['submit'])) 
+{
     $arr1 = explode(",", str_replace(" ", "", $_POST['arr1']));
     $arr2 = explode(",", str_replace(" ", "", $_POST['arr2']));
 
-    // a) Print the values of array
     echo "<h3>a) Array 1:</h3>";
     print_r($arr1);
 
@@ -52,4 +51,5 @@ if (isset($_POST['submit'])) {
 ?>
 
 </body>
+
 </html>
